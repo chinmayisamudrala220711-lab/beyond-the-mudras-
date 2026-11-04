@@ -1,71 +1,134 @@
 
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>My Magazine Website</title>
-</head><body>
 
-    <!-- Toolbar -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f3ed;
+            color: #3d3028;
+            margin: 40px;
+        }
+
+        h2 {
+            color: #754c38;
+        }
+
+        nav {
+            background-color: #754c38;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: #e8c9a8;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #c9ad96;
+            margin: 20px 0;
+        }
+
+        details {
+            background-color: #fffaf5;
+            border: 1px solid #d8c2ad;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        summary {
+            font-weight: bold;
+            color: #754c38;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        iframe {
+            border: 1px solid #d8c2ad;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        p {
+            color: #5c493b;
+        }
+
+        a {
+            color: #986442;
+        }
+
+        a:hover {
+            color: #b47c52;
+        }
+    </style>
+
+</head>
+
+<body>
+
     <h2>My Magazine Website</h2>
     <hr>
 
-    <!-- Navigation Bar -->
     <nav>
         <a href="index.html">HOME</a> |
-        <a href="#magazines">MAGAZINES</a>
     </nav>
 
     <hr>
 
-    <!-- Magazines Section -->
+    <!-- Magazine section -->
     <h2 id="magazines">MAGAZINES:</h2>
 
-    
-
-  
-<details>
-    <summary>Beyond the Mudras</summary>
-
-    <!-- Flipbook Option -->
     <details>
-        
-<details>
-    <summary>Flipbook</summary>
+        <summary>Beyond the Mudras</summary>
 
-    <iframe
-        src="https://player.flipsnack.com/index.html?hash=NjdGNjdGNkY4RDYrdnhueWh0dnk2eg=="
-        width="100%"
-        height="480"
-        seamless="seamless"
-        scrolling="no"
-        frameBorder="0"
-        allowFullScreen
-        allow="autoplay; clipboard-read; clipboard-write">
-    </iframe>
+        <!-- Flipbook option -->
+        <details>
+            <summary>Flipbook</summary>
 
-</details>
+            <iframe
+                src="https://player.flipsnack.com/index.html?hash=NjdGNjdGNkY4RDYrdTVhb205dXJ6cA=="
+                width="100%"
+                height="600"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+
+        </details>
+
+        <br>
+
+        <!-- PDF option -->
+        <details>
+            <summary>PDF</summary>
+
+            <iframe
+                src="Beyond the Mudras.pdf"
+                width="100%"
+                height="600">
+            </iframe>
+
+            <p>Finished viewing? Proceed to download:</p>
+
+            <a href="Beyond the Mudras.pdf" download>
+                Download Beyond the Mudras PDF
+            </a>
+
+        </details>
 
     </details>
 
-    <br>
-
-    <!-- PDF Option -->
-    <details>
-        <summary>PDF</summary>
-
-        <iframe
-            src="Beyond the Mudras.pdf"
-            width="100%"
-            height="600">
-        </iframe>
-
-        <p>Finished viewing? Proceed to download:</p>
-
-        <a href="Beyond the Mudras.pdf" download>
-            Download Beyond the Mudras PDF
-        </a>
-
-    </details>
-
-</details>
+</body>
+</html>
